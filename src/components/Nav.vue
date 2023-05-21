@@ -12,9 +12,7 @@
         >
       </router-link>
       <nav class="flex items-center links">
-        <a :href="https://www.sage.com/en-gb/blog">
-          Blog
-        </a>
+        <v-list-item href="https://www.sage.com/en-gb/blog" target="_blank">Blog</v-list-item>
         
         <router-link
           data-testid="catalog-link"
