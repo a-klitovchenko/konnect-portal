@@ -105,7 +105,7 @@ export default defineComponent({
         const portalVariables = res.data.variables.catalog
         welcome_message.value = "Hi"
         primary_header.value = "Sage Team"
-        catalog_cover_style.value.backgroundImage = url("https://www.sage.com/en-gb/-/media/images/sagedotcom/master/tier-one/sage-intacct/en-gb/en-gb-intacct-overview-hero-banner-desktop-v3.jpg?h=300&iar=0&w=1872")
+        catalog_cover_style.value.backgroundImage = url('https://www.sage.com/en-gb/-/media/images/sagedotcom/master/tier-one/sage-intacct/en-gb/en-gb-intacct-overview-hero-banner-desktop-v3.jpg?h=300&iar=0&w=1872')
       }).catch(e => { console.error('Failed to load appearance.', e) }).then(defaultHeaders)
     }
 
