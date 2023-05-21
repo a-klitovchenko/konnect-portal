@@ -12,14 +12,9 @@
         >
       </router-link>
       <nav class="flex items-center links">
-        <router-link
-          data-testid="catalog-link"
-          :to="https://www.sage.com/en-gb/blog/"
-          class="mr-2 p-2 catalog-link"
-        >
-          <div class="background-color-wrapper" />
+        <a :href="https://www.sage.com/en-gb/blog>
           Blog
-        </router-link>
+        </a>
         
         <router-link
           data-testid="catalog-link"
