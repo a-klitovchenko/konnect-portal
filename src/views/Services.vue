@@ -100,7 +100,9 @@ export default defineComponent({
     //  }).catch(e => { console.error('Failed to load appearance.', e) }).then(defaultHeaders)
     //}
     
-    catalog_cover_style.value.backgroundImage = url("https://www.sage.com/en-gb/-/media/images/sagedotcom/master/tier-one/sage-intacct/en-gb/en-gb-intacct-overview-hero-banner-desktop-v3.jpg")
+    welcome_message.value = Hi
+    primary_header.value = Sage Team
+    catalog_cover_style.value.backgroundImage = url("https://www.sage.com/en-gb/-/media/images/sagedotcom/master/tier-one/sage-intacct/en-gb/en-gb-intacct-overview-hero-banner-desktop-v3.jpg?h=483&iar=0&w=1872")
 
     const defaultHeaders = () => {
       if (!welcome_message.value) {
