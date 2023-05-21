@@ -20,7 +20,16 @@
           <div class="background-color-wrapper" />
           {{ helpText.catalog }}
         </router-link>
-
+        
+        <router-link
+          data-testid="catalog-link"
+          :to="{ name: 'catalog' }"
+          class="mr-2 p-2 catalog-link"
+        >
+          <div class="background-color-wrapper" />
+          {{ helpText.catalog }}
+        </router-link>
+        
         <UserDropdown
           v-if="developer && !isPublic"
           :email="developer.email"
