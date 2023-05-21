@@ -95,7 +95,8 @@ export default defineComponent({
         if (portalVariables.cover) {
           const imageUrl = portalApiV2.value.getApiLink('/api/v2/portal/catalog-cover')
 
-          catalog_cover_style.value.backgroundImage = `url(${imageUrl})`
+          catalog_cover_style.value.backgroundImage = url("https://www.sage.com/en-gb/-/media/images/sagedotcom/master/tier-one/sage-intacct/en-gb/en-gb-intacct-overview-hero-banner-desktop-v3.jpg?h=483&iar=0&w=1872&extension=webp&hash=8D4F5CDD1B5D358DAACE58AF92592FF8")
+          // `url(${imageUrl})`
         }
       }).catch(e => { console.error('Failed to load appearance.', e) }).then(defaultHeaders)
     }
