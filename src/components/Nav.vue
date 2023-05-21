@@ -54,8 +54,8 @@ export default defineComponent({
       window.location.href = logoutUrl
     }
     const { portalApiV2 } = usePortalApi()
-    <!--const logoSrc = portalApiV2.value.getApiLink('/api/v2/portal/logo')-->
-    logoSrc = "https://www.sage.com/Areas/SageDotCom/img/sage-logo-green.svg"
+    <!-- const logoSrc = portalApiV2.value.getApiLink('/api/v2/portal/logo') -->
+    const logoSrc = 'https://www.sage.com/Areas/SageDotCom/img/sage-logo-green.svg'
 
     return {
       logout,
