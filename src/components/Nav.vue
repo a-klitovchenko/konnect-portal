@@ -12,7 +12,7 @@
         >
       </router-link>
       <nav class="flex items-center links">
-        <a :href="https://www.sage.com/en-gb/blog>
+        <a :href="https://www.sage.com/en-gb/blog">
           Blog
         </a>
         
