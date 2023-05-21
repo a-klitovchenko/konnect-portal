@@ -14,11 +14,11 @@
       <nav class="flex items-center links">
         <router-link
           data-testid="catalog-link"
-          :to="{ name: 'catalog' }"
+          :to="https://www.sage.com/en-gb/blog/"
           class="mr-2 p-2 catalog-link"
         >
           <div class="background-color-wrapper" />
-          {{ helpText.catalog }}
+          Blog
         </router-link>
         
         <router-link
