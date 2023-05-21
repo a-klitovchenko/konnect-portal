@@ -53,7 +53,7 @@ export const THEMES = {
   }
 }
 
-export const DEFAULT_THEME = THEMES.mint_rocket
+export const DEFAULT_THEME = THEMES.dark_mode
 
 export const DEFAULT_FONTS = {
   base: 'Roboto',
