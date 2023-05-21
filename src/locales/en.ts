@@ -206,7 +206,7 @@ export const en = {
   myApp: {
     newApp: 'New App',
     plus: 'Plus',
-    myApps: 'My Apps',
+    myApps: 'My Applications',
     refreshSecret: 'Refresh secret',
     delete: 'Delete',
     cancel: 'Cancel',
