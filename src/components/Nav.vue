@@ -8,7 +8,6 @@
         <img
           class="logo"
           :src="https://www.sage.com/Areas/SageDotCom/img/sage-logo-green.svg"
-          <!-- :src="logoSrc" -->
           alt="logo"
         >
       </router-link>
