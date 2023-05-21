@@ -80,26 +80,27 @@ export default defineComponent({
 
     const { portalApiV2 } = usePortalApi()
 
-    const loadAppearance = async () => {
-      return portalApiV2.value.service.portalApi.getPortalAppearance().then(res => {
-        const portalVariables = res.data.variables.catalog
+    // const loadAppearance = async () => {
+    //  return portalApiV2.value.service.portalApi.getPortalAppearance().then(res => {
+    //    const portalVariables = res.data.variables.catalog
 
-        if (portalVariables.welcome_message) {
-          welcome_message.value = portalVariables.welcome_message.text
-        }
+    //    if (portalVariables.welcome_message) {
+    //      welcome_message.value = portalVariables.welcome_message.text
+    //    }
 
-        if (portalVariables.primary_header) {
-          primary_header.value = portalVariables.primary_header.text
-        }
+    //    if (portalVariables.primary_header) {
+    //      primary_header.value = portalVariables.primary_header.text
+    //    }
 
-        if (portalVariables.cover) {
-          const imageUrl = portalApiV2.value.getApiLink('/api/v2/portal/catalog-cover')
+    //    if (portalVariables.cover) {
+    //      const imageUrl = portalApiV2.value.getApiLink('/api/v2/portal/catalog-cover')
 
-          catalog_cover_style.value.backgroundImage = url("https://www.sage.com/en-gb/-/media/images/sagedotcom/master/tier-one/sage-intacct/en-gb/en-gb-intacct-overview-hero-banner-desktop-v3.jpg")
-          // `url(${imageUrl})`
-        }
-      }).catch(e => { console.error('Failed to load appearance.', e) }).then(defaultHeaders)
-    }
+    //      catalog_cover_style.value.backgroundImage = `url(${imageUrl})`
+    //    }
+    //  }).catch(e => { console.error('Failed to load appearance.', e) }).then(defaultHeaders)
+    //}
+    
+    catalog_cover_style.value.backgroundImage = url("https://www.sage.com/en-gb/-/media/images/sagedotcom/master/tier-one/sage-intacct/en-gb/en-gb-intacct-overview-hero-banner-desktop-v3.jpg")
 
     const defaultHeaders = () => {
       if (!welcome_message.value) {
