@@ -3,7 +3,7 @@
     <div class="flex-1">
       <slot>
         <h1 class="m-0 type-xl color-text_colors-headings">
-          Hello
+          {{ title }}
         </h1>
       </slot>
     </div>
