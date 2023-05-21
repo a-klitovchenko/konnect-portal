@@ -7,7 +7,8 @@
       <router-link to="/">
         <img
           class="logo"
-          :src="logoSrc"
+          :src="https://www.sage.com/Areas/SageDotCom/img/sage-logo-green.svg"
+          <!-- :src="logoSrc" -->
           alt="logo"
         >
       </router-link>
